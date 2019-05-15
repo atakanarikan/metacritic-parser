@@ -6,5 +6,5 @@
     
 ### How to run the tests:
 * `docker build . -f DockerfileTesting -t <your_test_tag_name>`
-* `docker run <your_test_tag_name>`  # port can be changed
+* `docker run <your_test_tag_name>`
  
