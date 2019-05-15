@@ -1,6 +1,6 @@
 from httmock import all_requests, HTTMock
 from unittest import TestCase
-from metacritic_html_parser import (
+from parser.metacritic_html_parser import (
     MetacriticPS4HtmlParser,
     ServerSideException,
     ClientSideException,
