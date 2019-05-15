@@ -14,5 +14,6 @@ RUN pip install -r requirements_testing.txt
 # Add source code
 COPY . .
 
-
+# if you want to supress warnings about the deprecation:
+# ENTRYPOINT ["py.test", "--disable-pytest-warnings"]
 ENTRYPOINT ["py.test"]
