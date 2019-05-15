@@ -1,5 +1,5 @@
 from unittest import TestCase
-from api import FlaskWrapper
+from api.flask_wrapper import FlaskWrapper
 from .mocks.parser_data import mock_data
 
 

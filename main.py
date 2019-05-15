@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from api import FlaskWrapper
+from api.flask_wrapper import FlaskWrapper
 from parser.metacritic_html_parser import MetacriticPS4HtmlParser
 
 
