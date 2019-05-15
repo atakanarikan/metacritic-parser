@@ -1,11 +1,4 @@
-from metacritic_html_parser import MetacriticPS4HtmlParser
+#!/usr/bin/env python3
+from api import FlaskWrapper
 
-
-class Runner:
-    def main(self):
-        parser = MetacriticPS4HtmlParser()
-        parser.parse()
-        print(parser.top_ps4_games)
-
-
-Runner().main()
+FlaskWrapper().run()
