@@ -64,7 +64,7 @@ class MetacriticPS4HtmlParser:
             }
 
     def _handle_http_error_and_reraise(self, response):
-        if response.status_code // 100 == 4:
+        if 400 <= response.status_code < 500:
             raise ClientSideException(response.text)
-        if response.status_code // 100 == 5:
+        if response.status_code >= 500:
             raise ServerSideException(response.text)
